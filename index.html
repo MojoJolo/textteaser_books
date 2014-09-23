@@ -31,6 +31,15 @@
       margin: 0px;
     }
 
+    #header h1 > a {
+      color: #fff;
+    }
+
+    #header h1 > a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
     .book {
       padding: 30px;
       /*border: 1px solid black;*/
@@ -44,21 +53,27 @@
 <body>
   <div class="row" id="header">
     <div class="col-md-12">
-      <h1>TextTeaser for Books</h1>
+      <h1><a href="index.html">TextTeaser for Books</a></h1>
     </div>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <div id="library" class="text-center book">
-          <img src="assets/books/hunger_games.jpg">
-          <h3 class="book-title">Hunger Games</h3>
+        <div class="text-center book">
+          <img src="books/hunger-games/hunger_games.jpg">
+          <h3 class="book-title"><a href="books/hunger-games/chapter1.html">Hunger Games</a></h3>
         </div>
       </div>
       <div class="col-md-3">
-        <div id="library" class="text-center book">
+        <div class="text-center book">
           <img src="assets/books/fifty_shades_of_grey.jpg">
           <h3 class="book-title">Fifty Shades of Grey</h3>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="text-center book">
+          <img src="assets/books/maze_runner.jpg">
+          <h3 class="book-title">The Maze Runner</h3>
         </div>
       </div>
     </div>
